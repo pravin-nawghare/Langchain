@@ -1,0 +1,47 @@
+# Langchain Core
+langchain
+langchain-core
+langchain-community
+
+# OpenAi  Integration
+langchain-openai
+openai
+
+# Anthropic Integration
+langchain-anthropic
+
+# Google Gemini (PaLM) Integration
+langchain-google-genai
+google-generativeai
+
+# Hugging Face Integration
+langchain-huggingface
+transformers
+huggingface-hub
+sentence-transformers
+
+# Environment variable Management
+python-dotenv
+
+# Machine Learning Utilities
+numpy
+scikit-learn 
+
+# Deep Learning Frameworks
+torch
+TensorFlow 
+# installed --> Keras 3.0 is not supported with transformers yet
+# tensorflow-cpu==2.16.1
+# tf-keras==2.16.0 --no-dependencies
+
+# for fast storage and retrieval used only with hugging face --> not installed yet
+# hf-xet
+
+# Data Validation
+pydantic
+
+# To visualize pipeline (chains)
+grandalf
+
+# For pdf loader
+PyPdf
