@@ -1,3 +1,6 @@
+from langchain_classic.text_splitter import RecursiveCharacterTextSplitter, Language
+
+text = '''
 class DataIngestion:
     def __init__(self, data_ingestion_config:DataIngestionConfig=DataIngestionConfig()):
         try:
@@ -24,3 +27,17 @@ class DataIngestion:
 
 data_ingestion = DataIngestion()
 data_ingestion.export_data_into_feature_store()
+'''
+
+splitter = RecursiveCharacterTextSplitter.from_language(
+    language=Language.PYTHON,
+    chunk_size = 2,
+    chunk_overlap = 0
+)
+
+chunks = splitter.split_text(text)
+
+print(len(chunks))
+print(chunks)
+
+# output - see the image at path (TextSplitter\DocumentStructureBased\Recursive text splitter on code.png)

@@ -1,4 +1,6 @@
-'''
+from langchain_classic.text_splitter import RecursiveCharacterTextSplitter, Language
+
+text = '''
 # Telecom Customer Churn Prediction – End-to-End ML Pipeline
 An **end-to-end machine** learning project to predict customer churn for a telecom company. The pipeline connects to a MongoDB database for data ingestion, preprocesses the data, trains classification models focused on minimizing false positives, and deploys the best model in AWS. A FastAPI-based web app provides a user interface, and GitHub Actions powers the CI/CD pipeline.
     
@@ -42,3 +44,17 @@ Contributions are welcome! Feel free to open issues or submit pull requests to i
 ### License
 This project is licensed under the MIT License.
 '''
+
+splitter = RecursiveCharacterTextSplitter.from_language(
+    language=Language.MARKDOWN,
+    chunk_size = 3,
+    chunk_overlap = 0
+)
+
+chunks = splitter.split_text(text)
+
+print(len(chunks))
+print(chunks)
+
+# output - see the image at path (TextSplitter\DocumentStructureBased\Recursive text splitter on markdown text with 3 chunks.png)
+# and (TextSplitter\DocumentStructureBased\Recursive text splitter on markdown text with 6 chunks.png)
