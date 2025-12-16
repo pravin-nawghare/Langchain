@@ -18,5 +18,5 @@ split = splitter.split_text(docs)
 # print(split)
 i = 1
 for split_text in split:
-    i += 1
     print(str(i)+' '+split_text)
+    i += 1
