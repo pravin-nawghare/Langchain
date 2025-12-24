@@ -45,3 +45,12 @@ grandalf
 
 # For pdf loader
 PyPdf
+
+# Vector Store
+langchain-chroma
+
+# Miscellanous
+tiktoken
+
+# Jupyter Notebook Support
+ipykernel
