@@ -4,6 +4,9 @@
 venvv/
 .env
 
+VectorStore/vector_stores_colab.ipynb
+DocumentLoaders/text_loader_original.py
+
 
 
 

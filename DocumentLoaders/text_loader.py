@@ -10,9 +10,6 @@ print(len(docs)) # 1
 print(type(docs)) # <class 'list'>
 print(docs[0])
 '''
-page_content='Hugging face
-
-password
-@ApiProject2025' metadata={'source': 'hugging face.txt'}
+Output present in original text loader file
 '''
 print(type(docs[0])) # <class 'langchain_core.documents.base.Document'>
