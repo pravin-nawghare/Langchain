@@ -1,11 +1,11 @@
-from langchain_community.document_loaders import PyPDFLoader
+from langchain_community.document_loaders import PyPDFLoader,TextLoader
 from pathlib import Path
 from typing import List, Any
 
 class DataIngestion:
     def __init__(self,path:str):
         self.path = path
-        print('Data Ingestion process started')
+        print('-------------------Data Ingestion process started-------------------')
     
     def _read_data(self) -> List[Any]:
         if self.path == '':
@@ -30,6 +30,7 @@ class DataIngestion:
                 documents.extend(load_file)
             except Exception as e:
                 print(f"Error loading {file}: {e}")
+                raise
 
         return documents
 
