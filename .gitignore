@@ -7,6 +7,7 @@ venvv/
 VectorStore/vector_stores_colab.ipynb
 DocumentLoaders/text_loader_original.py
 data
+RAG/chroma_store/
 
 
 
