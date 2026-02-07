@@ -54,3 +54,14 @@ tiktoken
 
 # Jupyter Notebook Support
 ipykernel
+
+# From book tutorial
+datasets==4.4.2
+accelerate
+tokenizers==0.22.1
+evaluate
+sentencepiece
+sacremoses
+
+# Deep Learning Framework and transformer fine tuning
+torch
