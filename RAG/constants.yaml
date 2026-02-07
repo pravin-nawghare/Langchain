@@ -1,0 +1,11 @@
+# data file path
+data_file_path: "./RAG/data"
+
+# embedding model 
+model_name: "sentence-transformers/all-MiniLM-L6-v2"
+
+# store collection name
+collection_name: 'interview_questions'
+
+# vector store path
+persist_directory: './RAG/chroma_store'
